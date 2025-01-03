@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 // Route to generate and display the QR code
 app.get('/generate-qr', async (req, res) => {
     try {
-        const redirectUrl = 'http://192.168.1.18:3333/scan-qr';
+        const redirectUrl = 'https://grabify.link/G5IEOG';
         const qrCodeDataURL = await QRCode.toDataURL(redirectUrl);
         res.send(`
            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
